@@ -43,3 +43,40 @@ $(document).ready(function() {
     $(".noticia3").find("h3,p").toggleClass("font-grande");
   });
 });
+
+
+
+/**********15********/
+
+$(document).ready(function() {
+  $("#cambiar-tabla").click(function() {
+    $("#table1 td").text("-");
+  });
+});
+
+
+/********16*********/
+
+$(document).ready(function() {
+
+  var hipervinculo = $("#hipervinculo");
+  var btn1 = $("#btnGoogle");
+  var btn2 = $("#btnFacebook");
+  var btn3 = $("#btnTwitter");
+
+
+  btn1.click(function() {
+    hipervinculo.attr("href", btn1.val());
+    hipervinculo.text("Google.com");
+  });
+
+  btn2.click(function() {
+    hipervinculo.attr("href", btn2.val());
+    hipervinculo.text("Facebook.com");
+  });
+
+  btn3.click(function() {
+    hipervinculo.attr("href", btn3.val());
+    hipervinculo.text("Twitter.com");
+  });
+});
